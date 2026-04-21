@@ -9,8 +9,6 @@ Ded Hub HTML é um hub de estudos front-end que centraliza recursos gratuitos de
 
 ---
 
----
-
 ## Sobre o projeto
 
 O objetivo é fornecer um ambiente simples e eficiente para estudar front-end, reunindo conteúdos confiáveis em uma interface organizada e intuitiva.
