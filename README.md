@@ -9,10 +9,6 @@ Ded Hub HTML é um hub de estudos front-end que centraliza recursos gratuitos de
 
 ---
 
-## Preview
-
-<img src="https://via.placeholder.com/1200x600.png?text=Ded+Hub+Preview" alt="Preview do projeto" />
-
 ---
 
 ## Sobre o projeto
@@ -52,8 +48,3 @@ Os materiais são filtráveis e categorizados, permitindo uma progressão estrut
 4. Prática e resolução de dúvidas  
 
 ---
-
-## Como usar
-
-```bash
-git clone https://github.com/seu-usuario/seu-repo.git
