@@ -26,20 +26,20 @@
 }
 
 /* ============================================ */
-/* PALETA VERMELHO / VINHO (inspirada na imagem)*/
+/* PALETA VERMELHO / VINHO                      */
 /* ============================================ */
 :root {
-  --primary: #C62828;           /* Vermelho intenso */
-  --primary-dark: #8B0000;      /* Vinho escuro */
-  --primary-light: #FFEBEE;     /* Vermelho clarinho */
-  --secondary: #D32F2F;         /* Vermelho médio */
-  --secondary-dark: #B71C1C;    /* Vermelho mais escuro */
-  --secondary-light: #FFCDD2;   /* Vermelho bem clarinho */
-  --bg: #FAFAFA;                /* Fundo claro */
-  --card: #FFFFFF;              /* Fundo dos cards */
-  --text: #1A1A1A;              /* Cor do texto (preto suave) */
-  --text-light: #555555;        /* Texto secundário */
-  --border: #E0E0E0;            /* Cor das bordas */
+  --primary: #C62828;
+  --primary-dark: #8B0000;
+  --primary-light: #FFEBEE;
+  --secondary: #D32F2F;
+  --secondary-dark: #B71C1C;
+  --secondary-light: #FFCDD2;
+  --bg: #FAFAFA;
+  --card: #FFFFFF;
+  --text: #1A1A1A;
+  --text-light: #555555;
+  --border: #E0E0E0;
   --shadow: 0 4px 12px rgba(198, 40, 40, 0.1);
   --shadow-hover: 0 8px 24px rgba(139, 0, 0, 0.2);
   --header-gradient-start: var(--primary);
@@ -51,7 +51,7 @@
 }
 
 /* ============================================ */
-/* DARK MODE - SOBRESCREVE AS CORES             */
+/* DARK MODE                                    */
 /* ============================================ */
 body.dark {
   --bg: #1a1a1a;
@@ -71,9 +71,6 @@ body.dark {
   --secondary-light: #4a1a1a;
 }
 
-/* ============================================ */
-/* ESTILOS BASE DO CORPO                        */
-/* ============================================ */
 body {
   font-family: 'Inter', sans-serif;
   background: var(--bg);
@@ -83,7 +80,7 @@ body {
 }
 
 /* ============================================ */
-/* BOTÃO DE DARK MODE (FLUTUANTE)               */
+/* BOTÃO DE DARK MODE                           */
 /* ============================================ */
 .theme-toggle {
   position: fixed;
@@ -110,7 +107,7 @@ body {
 }
 
 /* ============================================ */
-/* CABEÇALHO (HEADER)                           */
+/* CABEÇALHO                                    */
 /* ============================================ */
 .header {
   background: linear-gradient(135deg, var(--header-gradient-start) 0%, var(--header-gradient-end) 100%);
@@ -156,7 +153,7 @@ body {
 }
 
 /* ============================================ */
-/* TABS DE NAVEGAÇÃO (ABAS)                     */
+/* TABS                                         */
 /* ============================================ */
 .tabs {
   display: flex;
@@ -198,7 +195,7 @@ body {
 }
 
 /* ============================================ */
-/* CONTAINER PRINCIPAL (2 COLUNAS)              */
+/* CONTAINER PRINCIPAL                          */
 /* ============================================ */
 .main-container {
   display: flex;
@@ -209,7 +206,7 @@ body {
 }
 
 /* ============================================ */
-/* SIDEBAR COM FILTROS                          */
+/* SIDEBAR                                      */
 /* ============================================ */
 .sidebar {
   width: 260px;
@@ -289,7 +286,7 @@ body {
 }
 
 /* ============================================ */
-/* ÁREA DE CONTEÚDO PRINCIPAL                   */
+/* ÁREA DE CONTEÚDO                             */
 /* ============================================ */
 .content-area {
   flex: 1;
@@ -304,7 +301,7 @@ body {
 }
 
 /* ============================================ */
-/* CARD DE BOAS-VINDAS (WELCOME CARD)           */
+/* WELCOME CARD                                 */
 /* ============================================ */
 .welcome-card {
   background: linear-gradient(135deg, var(--welcome-gradient-start) 0%, var(--welcome-gradient-end) 100%);
@@ -351,7 +348,7 @@ body.dark .welcome-card h2 {
 }
 
 /* ============================================ */
-/* CARDS DE RECURSOS                            */
+/* CARDS                                        */
 /* ============================================ */
 .cards-grid {
   display: grid;
@@ -375,7 +372,7 @@ body.dark .welcome-card h2 {
 }
 
 /* ============================================ */
-/* BADGES (ETIQUETAS DE INFORMAÇÃO)             */
+/* BADGES                                       */
 /* ============================================ */
 .card-badges {
   display: flex;
@@ -394,7 +391,6 @@ body.dark .welcome-card h2 {
   gap: 4px;
 }
 
-/* Badges do modo claro */
 .badge-level-beginner { background: #E8F5E9; color: #2E7D32; }
 .badge-level-intermediate { background: var(--secondary-light); color: var(--secondary-dark); }
 .badge-level-advanced { background: var(--primary-light); color: var(--primary-dark); }
@@ -402,8 +398,8 @@ body.dark .welcome-card h2 {
 .badge-type { background: #FFEBEE; color: var(--primary-dark); }
 .badge-lang { background: #E8F5E9; color: #2E7D32; }
 .badge-free { background: #E8F5E9; color: #2E7D32; }
+.badge-credit { background: #FFF8E1; color: #F57F17; }
 
-/* Badges do modo escuro */
 body.dark .badge-level-beginner { background: #1b3a1f; color: #81c784; }
 body.dark .badge-level-intermediate { background: #4a1a1a; color: #ef9a9a; }
 body.dark .badge-level-advanced { background: #3d1a1a; color: #ef9a9a; }
@@ -411,10 +407,8 @@ body.dark .badge-level-forum { background: #0d2f4d; color: #64b5f6; }
 body.dark .badge-type { background: #3d1a1a; color: #ef9a9a; }
 body.dark .badge-lang { background: #1b3a1f; color: #81c784; }
 body.dark .badge-free { background: #1b3a1f; color: #81c784; }
+body.dark .badge-credit { background: #4a3a1a; color: #ffd54f; }
 
-/* ============================================ */
-/* TÍTULOS E LINKS DOS CARDS                    */
-/* ============================================ */
 .card-title {
   font-size: 18px;
   font-weight: 700;
@@ -452,8 +446,28 @@ body.dark .badge-free { background: #1b3a1f; color: #81c784; }
   margin-top: 8px;
 }
 
+.credit-highlight {
+  background: var(--secondary-light);
+  padding: 8px 12px;
+  border-radius: 12px;
+  margin-top: 12px;
+  font-size: 12px;
+  text-align: center;
+  color: var(--secondary-dark);
+}
+
+.credit-highlight a {
+  color: var(--primary-dark);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.credit-highlight a:hover {
+  text-decoration: underline;
+}
+
 /* ============================================ */
-/* SEÇÃO DE DÚVIDAS (FAQ)                       */
+/* FAQ                                          */
 /* ============================================ */
 .faq-item {
   background: var(--card);
@@ -495,7 +509,7 @@ body.dark .badge-free { background: #1b3a1f; color: #81c784; }
 }
 
 /* ============================================ */
-/* RODAPÉ (FOOTER)                              */
+/* FOOTER                                       */
 /* ============================================ */
 footer {
   text-align: center;
@@ -508,7 +522,7 @@ footer {
 }
 
 /* ============================================ */
-/* RESPONSIVIDADE (TABLET E CELULAR)            */
+/* RESPONSIVIDADE                               */
 /* ============================================ */
 @media (max-width: 900px) {
   .main-container { flex-direction: column; }
@@ -545,7 +559,7 @@ footer {
   <h1><i class="fas fa-code"></i> Ded Hub HTML</h1>
   <p>Aprenda HTML, CSS e JavaScript com recursos gratuitos organizados por nível, tipo e idioma</p>
   <div class="header-badges">
-    <span class="header-badge"><i class="fas fa-graduation-cap"></i> 36+ recursos</span>
+    <span class="header-badge"><i class="fas fa-graduation-cap"></i> 60+ recursos</span>
     <span class="header-badge"><i class="fas fa-globe"></i> PT/EN</span>
     <span class="header-badge"><i class="fas fa-gem"></i> 100% gratuito</span>
   </div>
@@ -559,16 +573,17 @@ footer {
   <div class="tab" data-page="html"><i class="fab fa-html5"></i> HTML</div>
   <div class="tab" data-page="css"><i class="fab fa-css3-alt"></i> CSS</div>
   <div class="tab" data-page="ferramentas"><i class="fas fa-tools"></i> Ferramentas</div>
+  <div class="tab" data-page="pratica"><i class="fas fa-gamepad"></i> Prática</div>
   <div class="tab" data-page="duvidas"><i class="fas fa-comments"></i> Dúvidas</div>
   <div class="tab" data-page="sobre"><i class="fas fa-info-circle"></i> Sobre</div>
 </div>
 
 <!-- ============================================ -->
-<!-- CONTAINER PRINCIPAL (SIDEBAR + CONTEÚDO)     -->
+<!-- CONTAINER PRINCIPAL                          -->
 <!-- ============================================ -->
 <div class="main-container">
   
-  <!-- ==================== SIDEBAR DE FILTROS ==================== -->
+  <!-- SIDEBAR DE FILTROS -->
   <aside class="sidebar">
     <h3><i class="fas fa-filter"></i> Filtros</h3>
     
@@ -607,10 +622,10 @@ footer {
     <button class="reset-filters" id="resetFilters"><i class="fas fa-undo-alt"></i> Limpar filtros</button>
   </aside>
 
-  <!-- ==================== ÁREA DE CONTEÚDO PRINCIPAL ==================== -->
+  <!-- ÁREA DE CONTEÚDO PRINCIPAL -->
   <div class="content-area">
     
-    <!-- >>> PÁGINA INÍCIO (HOME) >>> -->
+    <!-- PÁGINA INÍCIO -->
     <div id="page-home" class="content-page active">
       <div class="welcome-card">
         <h2><i class="fas fa-compass"></i> Bem-vindo ao seu estúdio de estudos!</h2>
@@ -619,14 +634,22 @@ footer {
           <span class="roadmap-step">1️⃣ HTML (Estrutura)</span>
           <span class="roadmap-step">2️⃣ CSS (Estilo)</span>
           <span class="roadmap-step">3️⃣ Flexbox (Layout)</span>
-          <span class="roadmap-step">4️⃣ Prática + Dúvidas</span>
+          <span class="roadmap-step">4️⃣ Grid (Layout Avançado)</span>
+          <span class="roadmap-step">5️⃣ Prática + Dúvidas</span>
         </div>
       </div>
-      <h3 style="margin-bottom: 16px; display: flex; gap: 8px; color: var(--primary);"><i class="fas fa-star" style="color: var(--secondary);"></i> Recursos em destaque</h3>
+      <h3 style="margin-bottom: 16px; display: flex; gap: 8px; color: var(--primary);">
+        <i class="fas fa-star" style="color: var(--secondary);"></i> 
+        Recursos em destaque 
+        <span style="font-size: 12px; font-weight: normal; color: var(--text-light); margin-left: 4px;">
+          <i class="fas fa-dice"></i> Aleatórios
+        </span>
+      </h3>
       <div class="cards-grid" id="destaques-grid"></div>
+      <!-- O contador de destaques será inserido aqui dinamicamente -->
     </div>
 
-    <!-- >>> PÁGINA HTML >>> -->
+    <!-- PÁGINA HTML -->
     <div id="page-html" class="content-page">
       <div class="welcome-card">
         <h2><i class="fab fa-html5"></i> HTML — HyperText Markup Language</h2>
@@ -635,25 +658,40 @@ footer {
       <div class="cards-grid" id="html-grid"></div>
     </div>
 
-    <!-- >>> PÁGINA CSS >>> -->
+    <!-- PÁGINA CSS -->
     <div id="page-css" class="content-page">
       <div class="welcome-card">
         <h2><i class="fab fa-css3-alt"></i> CSS — Cascading Style Sheets</h2>
-        <p>CSS controla a aparência: cores, fontes, layout, responsividade. Domine o Box Model, seletores, unidades e Flexbox!</p>
+        <p>CSS controla a aparência: cores, fontes, layout, responsividade. Domine o Box Model, seletores, unidades, Flexbox e Grid!</p>
       </div>
       <div class="cards-grid" id="css-grid"></div>
     </div>
 
-    <!-- >>> PÁGINA FERRAMENTAS >>> -->
+    <!-- PÁGINA FERRAMENTAS -->
     <div id="page-ferramentas" class="content-page">
       <div class="welcome-card">
         <h2><i class="fas fa-tools"></i> Ferramentas e Frameworks</h2>
-        <p>Recursos que aceleram seu desenvolvimento: Google Fonts, Tailwind CSS e muito mais.</p>
+        <p>Recursos que aceleram seu desenvolvimento: Google Fonts, Tailwind CSS, editores online, inspiração para design e muito mais.</p>
       </div>
       <div class="cards-grid" id="ferramentas-grid"></div>
     </div>
 
-    <!-- >>> PÁGINA DÚVIDAS (FAQ) >>> -->
+    <!-- PÁGINA PRÁTICA -->
+    <div id="page-pratica" class="content-page">
+      <div class="welcome-card">
+        <h2><i class="fas fa-gamepad"></i> Pratique Jogando!</h2>
+        <p>Aprenda CSS, Flexbox e Grid de forma divertida com jogos interativos que testam suas habilidades na prática.</p>
+        <div class="roadmap">
+          <span class="roadmap-step">🎮 Grid Garden</span>
+          <span class="roadmap-step">🐸 Flexbox Froggy</span>
+          <span class="roadmap-step">🎯 CodePen</span>
+          <span class="roadmap-step">💻 50 Projects</span>
+        </div>
+      </div>
+      <div class="cards-grid" id="pratica-grid"></div>
+    </div>
+
+    <!-- PÁGINA DÚVIDAS -->
     <div id="page-duvidas" class="content-page">
       <div class="welcome-card">
         <h2><i class="fas fa-comments"></i> Dúvidas Comuns da Comunidade</h2>
@@ -662,18 +700,67 @@ footer {
       <div id="duvidas-grid"></div>
     </div>
 
-    <!-- >>> PÁGINA SOBRE >>> -->
+    <!-- PÁGINA SOBRE -->
     <div id="page-sobre" class="content-page">
       <div class="welcome-card">
         <h2><i class="fas fa-info-circle"></i> Sobre este projeto</h2>
         
-        <p><strong>Objetivo:</strong> Criar um hub de estudos interativo e gratuito para quem está aprendendo desenvolvimento front-end, reunindo recursos confiáveis em um único ambiente organizado e fácil de navegar.</p>
+        <p><strong>🎯 Objetivo:</strong> Criar um hub de estudos interativo e gratuito para quem está aprendendo desenvolvimento front-end, reunindo recursos confiáveis em um único ambiente organizado e fácil de navegar.</p>
         
-        <p><strong>Critérios de seleção:</strong> Todos os conteúdos são gratuitos e provenientes de fontes reconhecidas da comunidade dev (como MDN, Alura, W3Schools e CSS-Tricks). Os materiais são organizados por nível de dificuldade, tipo de conteúdo e idioma, facilitando a progressão no aprendizado.</p>
+        <p><strong>✅ Critérios de seleção:</strong> Todos os conteúdos são gratuitos e provenientes de fontes reconhecidas da comunidade dev (como MDN, Alura, W3Schools, CSS-Tricks, freeCodeCamp, The Odin Project e repositórios populares do GitHub). Os materiais são organizados por nível de dificuldade, tipo de conteúdo e idioma, facilitando a progressão no aprendizado.</p>
         
-        <p><strong>Como usar:</strong> Navegue pelas abas para explorar cada área (HTML, CSS e ferramentas), utilize os filtros laterais para refinar os resultados conforme sua necessidade e siga o fluxo sugerido de estudos para evoluir de forma estruturada.</p>
+        <p><strong>📖 Como usar:</strong> Navegue pelas abas para explorar cada área (HTML, CSS, Ferramentas e Prática), utilize os filtros laterais para refinar os resultados conforme sua necessidade e siga o fluxo sugerido de estudos para evoluir de forma estruturada.</p>
         
-        <p><strong>Sobre o funcionamento:</strong> O site utiliza JavaScript para renderizar dinamicamente os conteúdos a partir de um banco de dados interno, permitindo filtragem em tempo real e navegação fluida entre as seções. Também conta com suporte a dark mode persistente para melhor experiência do usuário.</p>
+        <p><strong>⚙️ Sobre o funcionamento:</strong> O site utiliza JavaScript para renderizar dinamicamente os conteúdos a partir de um banco de dados interno, permitindo filtragem em tempo real e navegação fluida entre as seções. A página inicial exibe recursos aleatórios que mudam a cada recarga. Também conta com suporte a dark mode persistente para melhor experiência do usuário.</p>
+        
+        <hr style="margin: 20px 0; border-color: var(--border);">
+        
+        <h3 style="color: var(--primary); margin-bottom: 16px;"><i class="fas fa-heart" style="color: var(--secondary);"></i> Agradecimentos Especiais</h3>
+        
+        <!-- Créditos Individuais dos Mantenedores -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; margin-bottom: 20px;">
+          
+          <div style="background: var(--card); padding: 12px; border-radius: 12px; border: 1px solid var(--border);">
+            <p style="font-weight: 600; font-size: 14px;">
+              <i class="fab fa-github"></i> 
+              <a href="https://github.com/DevFernandoCruz" target="_blank" style="color: var(--primary);">Fernando Cruz</a>
+            </p>
+            <p style="font-size: 12px; color: var(--text-light);">Criador do repositório DevCursosBrasil, um guia completo com centenas de cursos gratuitos para a comunidade dev brasileira.</p>
+          </div>
+          
+          <div style="background: var(--card); padding: 12px; border-radius: 12px; border: 1px solid var(--border);">
+            <p style="font-weight: 600; font-size: 14px;">
+              <i class="fab fa-github"></i> 
+              <a href="https://github.com/bradtraversy" target="_blank" style="color: var(--primary);">Brad Traversy</a>
+            </p>
+            <p style="font-size: 12px; color: var(--text-light);">Criador do desafio 50 Projects 50 Days e do canal Traversy Media, referência mundial em tutoriais de desenvolvimento web.</p>
+          </div>
+          
+          <div style="background: var(--card); padding: 12px; border-radius: 12px; border: 1px solid var(--border);">
+            <p style="font-weight: 600; font-size: 14px;">
+              <i class="fab fa-github"></i> 
+              <a href="https://github.com/EbookFoundation" target="_blank" style="color: var(--primary);">EbookFoundation</a>
+            </p>
+            <p style="font-size: 12px; color: var(--text-light);">Organização sem fins lucrativos que mantém o maior acervo de livros gratuitos de programação do GitHub: +386k estrelas.</p>
+          </div>
+          
+          <div style="background: var(--card); padding: 12px; border-radius: 12px; border: 1px solid var(--border);">
+            <p style="font-weight: 600; font-size: 14px;">
+              <i class="fab fa-github"></i> 
+              <a href="https://github.com/freeCodeCamp" target="_blank" style="color: var(--primary);">freeCodeCamp</a>
+            </p>
+            <p style="font-size: 12px; color: var(--text-light);">Organização sem fins lucrativos que oferece currículo completo de programação gratuito para milhões de pessoas no mundo todo.</p>
+          </div>
+          
+          <div style="background: var(--card); padding: 12px; border-radius: 12px; border: 1px solid var(--border);">
+            <p style="font-weight: 600; font-size: 14px;">
+              <i class="fab fa-github"></i> 
+              <a href="https://github.com/AllThingsSmitty" target="_blank" style="color: var(--primary);">Matt Smith</a>
+            </p>
+            <p style="font-size: 12px; color: var(--text-light);">Criador do CSS Protips, uma coleção de dicas profissionais que ajudam desenvolvedores a escrever CSS melhor e mais eficiente.</p>
+          </div>
+          
+        </div>
         
         <hr style="margin: 20px 0; border-color: var(--border);">
         
@@ -691,19 +778,25 @@ footer {
 </div>
 
 <!-- ============================================ -->
-<!-- RODAPÉ (FOOTER)                              -->
+<!-- RODAPÉ                                       -->
 <!-- ============================================ -->
 <footer>
   <p><i class="fas fa-code"></i> Ded Hub HTML — Hub de estudos com recursos gratuitos para HTML, CSS e fundamentos web</p>
   <p style="margin-top: 8px;">Desenvolvido por <strong>Ded</strong> • Projeto de prática em front-end e curadoria de conteúdo educacional</p>
+  <p style="margin-top: 12px; font-size: 11px; opacity: 0.8;">
+    🙏 Agradecimentos aos mantenedores dos repositórios: 
+    <a href="https://github.com/DevFernandoCruz" target="_blank" style="color: #ffcdd2;">Fernando Cruz</a> • 
+    <a href="https://github.com/bradtraversy" target="_blank" style="color: #ffcdd2;">Brad Traversy</a> • 
+    <a href="https://github.com/EbookFoundation" target="_blank" style="color: #ffcdd2;">EbookFoundation</a> • 
+    <a href="https://github.com/freeCodeCamp" target="_blank" style="color: #ffcdd2;">freeCodeCamp</a> • 
+    <a href="https://github.com/AllThingsSmitty" target="_blank" style="color: #ffcdd2;">Matt Smith</a>
+  </p>
+  <p style="margin-top: 8px; font-size: 11px; opacity: 0.8;">Conteúdo aberto e gratuito para a comunidade dev • Recursos de MDN, Alura, W3Schools, CSS-Tricks, The Odin Project e outros</p>
 </footer>
 
-<!-- ============================================ -->
-<!-- SCRIPT PRINCIPAL                             -->
-<!-- ============================================ -->
 <script>
 // ============================================
-// 1. DARK MODE - PERSISTÊNCIA LOCAL
+// 1. DARK MODE
 // ============================================
 function initDarkMode() {
   const toggleBtn = document.getElementById('themeToggle');
@@ -726,15 +819,17 @@ function initDarkMode() {
 // 2. BANCO DE DADOS DE RECURSOS
 // ============================================
 const recursos = [
-  // ========== HTML ==========
+  // HTML
   { id: 1, page: "html", title: "HTML para iniciantes", url: "https://developer.mozilla.org/pt-BR/docs/Web/HTML", type: "docs", level: "beginner", lang: "pt", desc: "Base completa sobre HTML — a estrutura fundamental da web, direto da documentação oficial da Mozilla.", site: "MDN" },
   { id: 2, page: "html", title: "Tags HTML", url: "https://www.w3schools.com/tags/", type: "docs", level: "beginner", lang: "en", desc: "Lista completa e exemplos práticos de todas as tags HTML, com demonstrações interativas.", site: "W3Schools" },
   { id: 3, page: "html", title: "Sintaxe básica do HTML", url: "https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax", type: "docs", level: "beginner", lang: "pt", desc: "Estrutura fundamental e elementos essenciais para criar sua primeira página do zero.", site: "MDN" },
   { id: 4, page: "html", title: "Atributo class", url: "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/class", type: "docs", level: "intermediate", lang: "en", desc: "Como usar classes para conectar HTML com CSS e JavaScript — essencial para estilização.", site: "MDN" },
   { id: 5, page: "html", title: "Nomeação de classes", url: "https://www.alura.com.br/artigos/nomes-de-classes-no-css", type: "article", level: "intermediate", lang: "pt", desc: "Boas práticas profissionais para nomear classes em projetos web.", site: "Alura" },
   { id: 6, page: "html", title: "Elemento &lt;div&gt;", url: "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements/div", type: "docs", level: "intermediate", lang: "pt", desc: "O container genérico mais usado para agrupar e estruturar seções da página.", site: "MDN" },
+  { id: 100, page: "html", title: "W3Schools HTML Tutorial (Inglês)", url: "https://www.w3schools.com/html/default.asp", type: "course", level: "beginner", lang: "en", desc: "Tutorial completo e interativo de HTML. Aprenda com o editor 'Try it Yourself' e exemplos práticos.", site: "W3Schools" },
+  { id: 106, page: "html", title: "HTML Lists", url: "https://www.w3schools.com/HTML/html_lists.asp", type: "docs", level: "beginner", lang: "en", desc: "Tutorial completo sobre listas HTML: ordenadas, não ordenadas e de definição, com exemplos práticos.", site: "W3Schools" },
   
-  // ========== CSS ==========
+  // CSS
   { id: 7, page: "css", title: "Introdução ao CSS", url: "https://www.w3schools.com/css/css_intro.asp", type: "docs", level: "beginner", lang: "en", desc: "Primeiros passos — como conectar CSS ao HTML e propriedades básicas.", site: "W3Schools" },
   { id: 8, page: "css", title: "CSS: guia completo para iniciantes", url: "https://www.alura.com.br/artigos/css", type: "article", level: "beginner", lang: "pt", desc: "Guia abrangente desde conceitos básicos até dicas práticas de uso.", site: "Alura" },
   { id: 9, page: "css", title: "Reset CSS", url: "https://www.alura.com.br/artigos/o-que-e-reset-css", type: "article", level: "beginner", lang: "pt", desc: "Técnica para remover estilos padrão dos navegadores, garantindo consistência.", site: "Alura" },
@@ -752,30 +847,76 @@ const recursos = [
   { id: 21, page: "css", title: "Curso Flexbox e layouts responsivos", url: "https://www.alura.com.br/conteudo/css-flexbox-layouts-responsivos", type: "course", level: "advanced", lang: "pt", desc: "Projeto prático: AluraPlay com Flexbox.", site: "Alura" },
   { id: 22, page: "css", title: "CSS Border", url: "https://www.alura.com.br/artigos/css-border-estilizando-bordas-elementos-css", type: "article", level: "intermediate", lang: "pt", desc: "Estilize bordas com border-width, border-style e border-color.", site: "Alura" },
   { id: 23, page: "css", title: "box-sizing", url: "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-sizing", type: "docs", level: "intermediate", lang: "en", desc: "Controle preciso do cálculo de tamanhos dos elementos.", site: "MDN" },
+  { id: 101, page: "css", title: "W3Schools CSS Tutorial (Inglês)", url: "https://www.w3schools.com/css/", type: "course", level: "beginner", lang: "en", desc: "Aprenda a estilizar páginas web com CSS, do básico ao avançado. Inclui exemplos, exercícios e testes.", site: "W3Schools" },
+  { id: 102, page: "css", title: "freeCodeCamp: Design Responsivo para Web (Português)", url: "https://www.freecodecamp.org/portuguese/learn/2022/responsive-web-design/", type: "course", level: "beginner", lang: "pt", desc: "Curso prático e gratuito que ensina HTML e CSS construindo projetos reais e responsivos.", site: "freeCodeCamp" },
+  { id: 103, page: "css", title: "CSS Border: estilizando com bordas", url: "https://cursos.alura.com.br/extra/alura-mais/css-border-estilizando-com-bordas-seus-elementos-css-c1486", type: "course", level: "intermediate", lang: "pt", desc: "Alura+ com dicas práticas para estilizar bordas de elementos CSS com diferentes estilos, cores e espessuras.", site: "Alura" },
+  { id: 104, page: "css", title: "CSS :hover Selector", url: "https://www.w3schools.com/cssref/sel_hover.php", type: "docs", level: "beginner", lang: "en", desc: "Aprenda a usar a pseudo-classe :hover para criar efeitos interativos quando o mouse passa sobre elementos.", site: "W3Schools" },
+  { id: 105, page: "css", title: "CSS Padding Property", url: "https://www.w3schools.com/cssref/pr_padding.php", type: "docs", level: "beginner", lang: "en", desc: "Referência completa da propriedade padding: controle o espaçamento interno dos elementos HTML.", site: "W3Schools" },
+  { id: 109, page: "css", title: "Aprenda CSS (web.dev - Português)", url: "https://web.dev/learn/css?hl=pt", type: "course", level: "beginner", lang: "pt", desc: "Curso completo e moderno de CSS do Google, dividido em módulos práticos. Aprenda desde seletores até animações com as melhores práticas atuais.", site: "Google web.dev" },
+  { id: 110, page: "css", title: "CSS Grid Layout (MDN - Português)", url: "https://developer.mozilla.org/pt-BR/docs/Web/CSS/Guides/Grid_layout", type: "docs", level: "advanced", lang: "pt", desc: "Documentação oficial sobre Grid Layout, o método bi-dimensional para criação de layouts CSS com linhas e colunas. Divida a página em grandes regiões e defina relacionamentos entre componentes.", site: "MDN Web Docs" },
+  { id: 111, page: "css", title: "A Complete Guide to CSS Grid (Inglês)", url: "https://css-tricks.com/snippets/css/complete-guide-css-grid/", type: "docs", level: "advanced", lang: "en", desc: "O guia visual mais famoso sobre CSS Grid Layout. Aprenda todas as propriedades do container e dos itens com diagramas claros e exemplos práticos.", site: "CSS-Tricks" },
+  { id: 112, page: "css", title: "Grid Garden - Jogo para Aprender Grid (Inglês)", url: "https://cssgridgarden.com/", type: "tool", level: "beginner", lang: "en", desc: "Jogo interativo que ensina CSS Grid Layout de forma divertida! Cultive seu jardim usando grid-template-columns, grid-template-rows, grid-area e outras propriedades enquanto completa desafios progressivos.", site: "Grid Garden" },
+  { id: 113, page: "css", title: "Flexbox Froggy - Jogo para Aprender Flexbox (Inglês)", url: "https://flexboxfroggy.com/", type: "tool", level: "beginner", lang: "en", desc: "Jogo interativo que ensina CSS Flexbox de forma divertida! Ajude os sapinhos a chegarem nas vitórias-régias usando justify-content, align-items, flex-direction e outras propriedades do Flexbox.", site: "Flexbox Froggy" },
+  { id: 118, page: "css", title: "💡 CSS Protips - Dicas Avançadas", url: "https://github.com/AllThingsSmitty/css-protips", type: "docs", level: "advanced", lang: "en", desc: "Coleção de dicas profissionais de CSS para melhorar suas habilidades. Técnicas avançadas, truques de produtividade e boas práticas de um desenvolvedor experiente.", site: "GitHub · Matt Smith", credit: "https://github.com/AllThingsSmitty" },
   
-  // ========== FERRAMENTAS ==========
+  // Ferramentas
   { id: 24, page: "ferramentas", title: "Google Fonts", url: "https://fonts.google.com/", type: "tool", level: "beginner", lang: "en", desc: "Biblioteca gratuita com centenas de fontes para web.", site: "Google" },
   { id: 25, page: "ferramentas", title: "Começando com Google Fonts", url: "https://developers.google.com/fonts/docs/getting_started?hl=pt-br", type: "docs", level: "beginner", lang: "pt", desc: "Guia oficial para usar fontes personalizadas em CSS.", site: "Google Developers" },
   { id: 26, page: "ferramentas", title: "Tailwind CSS", url: "https://www.alura.com.br/conteudo/tailwind-css-estilizando-pagina-classes-utilitarias", type: "course", level: "intermediate", lang: "pt", desc: "Framework de classes utilitárias para estilização rápida.", site: "Alura" },
   { id: 27, page: "ferramentas", title: "Tailwind: fontes customizadas", url: "https://www.alura.com.br/artigos/tailwind-adicionando-fontes-customizadas", type: "article", level: "intermediate", lang: "pt", desc: "Como usar fontes externas e locais com Tailwind CSS.", site: "Alura" },
-  { id: 36, page: "ferramentas", title: "📚 Guia de Programação - DevCursosBrasil", url: "https://github.com/DevFernandoCruz/DevCursosBrasil", type: "tool", level: "beginner", lang: "pt", desc: "🎯 O guia para alavancar sua carreira! Centenas de cursos gratuitos, desafios e dicas organizados por linguagem: Java, Python, JavaScript, PHP, C#, C++, Go, Swift, Kotlin, React, Vue, Angular, Flutter, e muito mais.", site: "GitHub · DevFernandoCruz" },
+  { id: 108, page: "ferramentas", title: "CodePen - Editor Online", url: "https://codepen.io/pen/", type: "tool", level: "beginner", lang: "en", desc: "Editor de código online para HTML, CSS e JavaScript. Teste ideias, crie protótipos e compartilhe seus experimentos instantaneamente.", site: "CodePen" },
+  { id: 114, page: "ferramentas", title: "Dribbble - Inspiração para Design", url: "https://dribbble.com/", type: "tool", level: "beginner", lang: "en", desc: "A maior comunidade de designers do mundo. Explore milhares de designs, interfaces, animações e layouts criados por profissionais. Ótimo para buscar inspiração antes de codar!", site: "Dribbble" },
   
-  // ========== DESTAQUES (HOME) ==========
-  { id: 37, page: "home", title: "📚 Guia de Programação - DevCursosBrasil", url: "https://github.com/DevFernandoCruz/DevCursosBrasil", type: "tool", level: "beginner", lang: "pt", desc: "🎯 O guia para alavancar sua carreira! Centenas de cursos gratuitos, desafios e dicas organizados por linguagem.", site: "GitHub · DevFernandoCruz" },
+  // DevCursosBrasil - com créditos
+  { id: 36, page: "ferramentas", title: "📚 Guia de Programação - DevCursosBrasil", url: "https://github.com/DevFernandoCruz/DevCursosBrasil", type: "tool", level: "beginner", lang: "pt", desc: "🎯 O guia para alavancar sua carreira! Centenas de cursos gratuitos, desafios e dicas organizados por linguagem: Java, Python, JavaScript, PHP, C#, C++, Go, Swift, Kotlin, React, Vue, Angular, Flutter, e muito mais. Inclui sites para estudar, desafios front/back/mobile, ferramentas, canais do YouTube gratuitos, blogs, podcasts e livros.", site: "GitHub · Fernando Cruz", credit: "https://github.com/DevFernandoCruz" },
+  
+  // Repositórios GitHub
+  { id: 115, page: "ferramentas", title: "⭐ 50 Projects 50 Days - Desafios Práticos", url: "https://github.com/bradtraversy/50projects50days", type: "tool", level: "intermediate", lang: "en", desc: "50 projetos em 50 dias para praticar HTML, CSS e JavaScript. Cada projeto é independente, do básico ao avançado, ideal para solidificar suas habilidades com desafios reais.", site: "GitHub · Brad Traversy", credit: "https://github.com/bradtraversy" },
+  { id: 116, page: "ferramentas", title: "📚 Free Programming Books - EbookFoundation", url: "https://github.com/EbookFoundation/free-programming-books", type: "tool", level: "beginner", lang: "en", desc: "Maior acervo de livros gratuitos de programação do GitHub: +386k estrelas. Inclui materiais em Português (Brasil), cheat sheets, cursos online e podcasts.", site: "GitHub · EbookFoundation", credit: "https://github.com/EbookFoundation" },
+  { id: 117, page: "ferramentas", title: "🏆 freeCodeCamp - Currículo Open Source", url: "https://github.com/freeCodeCamp/freeCodeCamp", type: "tool", level: "beginner", lang: "en", desc: "O código-fonte e currículo completo da freeCodeCamp.org: +443k estrelas. Currículo de 3.000 horas, desafios interativos, fóruns e comunidade global.", site: "GitHub · freeCodeCamp", credit: "https://github.com/freeCodeCamp" },
+  
+  // Prática - Jogos e Desafios
+  { id: 123, page: "pratica", title: "🌱 Grid Garden - Aprenda CSS Grid", url: "https://cssgridgarden.com/", type: "tool", level: "beginner", lang: "en", desc: "Jogo interativo que ensina CSS Grid Layout cultivando um jardim! Use grid-template-columns, grid-template-rows e grid-area em 28 níveis progressivos.", site: "Grid Garden" },
+  { id: 124, page: "pratica", title: "🐸 Flexbox Froggy - Aprenda Flexbox", url: "https://flexboxfroggy.com/", type: "tool", level: "beginner", lang: "en", desc: "Ajude os sapinhos a chegarem nas vitórias-régias! Pratique justify-content, align-items, flex-direction e outras propriedades do Flexbox em 24 desafios.", site: "Flexbox Froggy" },
+  { id: 125, page: "pratica", title: "🎯 CodePen - Pratique no Editor", url: "https://codepen.io/pen/", type: "tool", level: "beginner", lang: "en", desc: "Editor online para testar HTML, CSS e JavaScript em tempo real. Crie experimentos, protótipos e compartilhe seus códigos com a comunidade.", site: "CodePen" },
+  { id: 126, page: "pratica", title: "⭐ 50 Projects 50 Days - Desafios", url: "https://github.com/bradtraversy/50projects50days", type: "tool", level: "intermediate", lang: "en", desc: "50 projetos práticos para melhorar suas habilidades em HTML, CSS e JavaScript. Cada projeto é independente e progressivamente mais desafiador.", site: "GitHub · Brad Traversy", credit: "https://github.com/bradtraversy" },
+  { id: 127, page: "pratica", title: "🏆 freeCodeCamp - Currículo Interativo", url: "https://www.freecodecamp.org/portuguese/learn/2022/responsive-web-design/", type: "course", level: "beginner", lang: "pt", desc: "Currículo prático com projetos para certificação. Construa aplicações reais enquanto aprende HTML e CSS com desafios interativos.", site: "freeCodeCamp" },
+  { id: 128, page: "pratica", title: "🎨 Dribbble - Desafios de Design", url: "https://dribbble.com/", type: "tool", level: "beginner", lang: "en", desc: "Busque inspiração em milhares de designs e tente recriá-los com HTML/CSS. Ótimo para praticar pixel-perfect e layouts complexos.", site: "Dribbble" },
+  
+  // Destaques HOME
+  { id: 37, page: "home", title: "📚 Guia de Programação - DevCursosBrasil", url: "https://github.com/DevFernandoCruz/DevCursosBrasil", type: "tool", level: "beginner", lang: "pt", desc: "🎯 O guia para alavancar sua carreira! Centenas de cursos gratuitos, desafios e dicas organizados por linguagem.", site: "GitHub · Fernando Cruz", credit: "https://github.com/DevFernandoCruz" },
   { id: 33, page: "home", title: "MDN Aprenda desenvolvimento web", url: "https://developer.mozilla.org/pt-BR/docs/Learn", type: "docs", level: "beginner", lang: "pt", desc: "Documentação oficial mais completa sobre HTML, CSS e JavaScript.", site: "MDN" },
   { id: 34, page: "home", title: "CSS Tricks", url: "https://css-tricks.com/", type: "docs", level: "intermediate", lang: "en", desc: "Artigos, guias e dicas sobre CSS moderno e front-end.", site: "CSS-Tricks" },
   { id: 35, page: "home", title: "Smashing Magazine", url: "https://www.smashingmagazine.com/", type: "docs", level: "advanced", lang: "en", desc: "Conteúdo aprofundado sobre front-end, UX e design.", site: "Smashing Magazine" },
+  { id: 107, page: "home", title: "The Odin Project - Foundations (Inglês)", url: "https://www.theodinproject.com/paths/foundations/courses/foundations", type: "course", level: "beginner", lang: "en", desc: "Curso prático e completo com introdução às ferramentas essenciais para construir sites reais. A base que você precisa para cursos mais avançados.", site: "The Odin Project" },
+  { id: 119, page: "home", title: "⭐ 50 Projects 50 Days - Desafios Práticos", url: "https://github.com/bradtraversy/50projects50days", type: "tool", level: "intermediate", lang: "en", desc: "50 projetos em 50 dias para praticar HTML, CSS e JavaScript. Ideal para solidificar suas habilidades com desafios reais.", site: "GitHub · Brad Traversy", credit: "https://github.com/bradtraversy" },
+  { id: 120, page: "home", title: "📚 Free Programming Books - EbookFoundation", url: "https://github.com/EbookFoundation/free-programming-books", type: "tool", level: "beginner", lang: "en", desc: "Maior acervo de livros gratuitos de programação: +386k estrelas. Materiais em Português, cheat sheets, cursos e podcasts.", site: "GitHub · EbookFoundation", credit: "https://github.com/EbookFoundation" },
+  { id: 121, page: "home", title: "🏆 freeCodeCamp - Currículo Open Source", url: "https://github.com/freeCodeCamp/freeCodeCamp", type: "tool", level: "beginner", lang: "en", desc: "Currículo completo da freeCodeCamp.org: +443k estrelas. 3.000 horas de conteúdo, desafios interativos e comunidade global.", site: "GitHub · freeCodeCamp", credit: "https://github.com/freeCodeCamp" },
+  { id: 122, page: "home", title: "💡 CSS Protips - Dicas Avançadas", url: "https://github.com/AllThingsSmitty/css-protips", type: "docs", level: "advanced", lang: "en", desc: "Coleção de dicas profissionais de CSS. Técnicas avançadas, truques de produtividade e boas práticas.", site: "GitHub · Matt Smith", credit: "https://github.com/AllThingsSmitty" },
   
-  // ========== DÚVIDAS (FAQ) ==========
+  // Dúvidas
   { id: 28, page: "duvidas", title: "Quando usar height: 100vh?", url: "https://cursos.alura.com.br/forum/topico-duvida-viewport-271522", type: "forum-content", level: "forum", lang: "pt", desc: "Discussão sobre viewport e como evitar que o conteúdo 'estoure' a tela.", site: "Alura Fórum" },
   { id: 29, page: "duvidas", title: "Função do box-sizing: border-box", url: "https://cursos.alura.com.br/forum/topico-qual-a-funcao-do-box-sizing-border-box-34779", type: "forum-content", level: "forum", lang: "pt", desc: "Como border-box influencia o cálculo de tamanhos incluindo bordas e padding.", site: "Alura Fórum" },
   { id: 30, page: "duvidas", title: "Como fazer link parecer um botão?", url: "https://cursos.alura.com.br/forum/topico-como-vamos-fazer-o-link-das-redes-sociais-parecer-um-botao-317242", type: "forum-content", level: "forum", lang: "pt", desc: "Uso de border-radius para arredondar bordas e criar botões.", site: "Alura Fórum" },
   { id: 31, page: "duvidas", title: "Removendo sublinhado de links", url: "https://cursos.alura.com.br/forum/topico-linhas-dos-links-dos-botoes-continuam-aparecendo-282291", type: "forum-content", level: "forum", lang: "pt", desc: "Solução: text-decoration: none para remover decoração padrão.", site: "Alura Fórum" },
-  { id: 32, page: "duvidas", title: "Importação de fontes: link vs @import", url: "https://cursos.alura.com.br/forum/topico-duvida-importacao-da-fonte-281161", type: "forum-content", level: "forum", lang: "pt", desc: "Qual método usar para Google Fonts? Comparativo de desempenho.", site: "Alura Fórum" }
+  { id: 32, page: "duvidas", title: "Importação de fontes: link vs @import", url: "https://cursos.alura.com.br/forum/topico-duvida-importacao-da-fonte-281161", type: "forum-content", level: "forum", lang: "pt", desc: "Qual método usar para Google Fonts? Comparativo de desempenho.", site: "Alura Fórum" },
+  { id: 129, page: "duvidas", title: "Cabeçalho idêntico em todos os arquivos", url: "https://cursos.alura.com.br/forum/topico-cabecalho-identico-em-todos-os-arquivos-558966", type: "forum-content", level: "forum", lang: "pt", desc: "Como manter o cabeçalho e rodapé iguais em múltiplas páginas HTML sem repetir código manualmente. Discussão sobre includes, templates e componentes reutilizáveis.", site: "Alura Fórum" },
+  { id: 130, page: "duvidas", title: "Criando sites com HTML e CSS - Dúvidas gerais", url: "https://cursos.alura.com.br/forum/topico-duvida-criando-sites-com-html-e-css-555471", type: "forum-content", level: "forum", lang: "pt", desc: "Dúvidas comuns sobre estruturação de sites, boas práticas de HTML semântico e estilização com CSS para iniciantes.", site: "Alura Fórum" },
+  { id: 131, page: "duvidas", title: "Personalizando com :hover - Desafio prático", url: "https://cursos.alura.com.br/forum/topico-projeto-desafio-personalizando-com-hover-555162", type: "forum-content", level: "forum", lang: "pt", desc: "Discussão sobre como usar a pseudo-classe :hover para criar efeitos interativos em botões, links e cards. Técnicas de transições suaves com CSS.", site: "Alura Fórum" },
+  { id: 132, page: "duvidas", title: "Diferença entre margin e padding", url: "https://cursos.alura.com.br/forum/topico-diferenca-entre-margin-e-padding-30346", type: "forum-content", level: "forum", lang: "pt", desc: "Entenda de uma vez a diferença entre margin (espaçamento externo) e padding (espaçamento interno) no Box Model do CSS, com exemplos práticos do dia a dia.", site: "Alura Fórum" },
+  { id: 133, page: "duvidas", title: "Flexbox não funciona - Solução de problemas", url: "https://cursos.alura.com.br/forum/topico-flexbox-nao-funciona-245962", type: "forum-content", level: "forum", lang: "pt", desc: "Dicas para diagnosticar e corrigir problemas comuns com Flexbox: display:flex ausente, container errado, conflitos com outras propriedades CSS.", site: "Alura Fórum" },
+  { id: 134, page: "duvidas", title: "Display: block, inline e inline-block", url: "https://cursos.alura.com.br/forum/topico-display-block-inline-inline-block-28111", type: "forum-content", level: "forum", lang: "pt", desc: "As diferenças fundamentais entre os valores de display mais usados. Quando usar cada um para controlar o fluxo e comportamento dos elementos na página.", site: "Alura Fórum" },
+  { id: 135, page: "duvidas", title: "HTML semântico: qual a importância?", url: "https://cursos.alura.com.br/forum/topico-html-semantico-qual-a-importancia-254114", type: "forum-content", level: "forum", lang: "pt", desc: "Por que usar tags como header, nav, main, article e footer? Entenda o impacto em acessibilidade, SEO e manutenção do código.", site: "Alura Fórum" },
+  { id: 136, page: "duvidas", title: "Position: absolute e relative - Dúvidas", url: "https://cursos.alura.com.br/forum/topico-position-absolute-relative-duvida-202987", type: "forum-content", level: "forum", lang: "pt", desc: "Como funcionam os posicionamentos relative (referência a si mesmo) e absolute (referência ao ancestral posicionado). Casos de uso e armadilhas comuns.", site: "Alura Fórum" },
+  { id: 137, page: "duvidas", title: "REM vs PX: qual usar?", url: "https://cursos.alura.com.br/forum/topico-rem-vs-px-qual-usar-273811", type: "forum-content", level: "forum", lang: "pt", desc: "Comparativo entre unidades absolutas (px) e relativas (rem) no CSS. Entenda acessibilidade, responsividade e quando cada uma é mais adequada.", site: "Alura Fórum" },
+  { id: 138, page: "duvidas", title: "Flexbox: justify-content vs align-items", url: "https://cursos.alura.com.br/forum/topico-duvida-flexbox-justify-content-vs-align-items-262321", type: "forum-content", level: "forum", lang: "pt", desc: "Entenda a diferença crucial entre justify-content (eixo principal) e align-items (eixo transversal) no Flexbox. Quando usar cada um para alinhar elementos corretamente.", site: "Alura Fórum" },
+  { id: 139, page: "duvidas", title: "Height 100vh - Problema no mobile", url: "https://cursos.alura.com.br/forum/topico-duvida-height-100-vh-problema-mobile-278901", type: "forum-content", level: "forum", lang: "pt", desc: "Por que height: 100vh pode causar problemas em dispositivos móveis? Entenda o comportamento da viewport mobile e alternativas como dvh, svh e lvh.", site: "Alura Fórum" },
+  { id: 140, page: "duvidas", title: "Por que meu CSS não aplica?", url: "https://cursos.alura.com.br/forum/topico-duvida-porque-meu-css-nao-aplica-289123", type: "forum-content", level: "forum", lang: "pt", desc: "Guia de troubleshooting: problemas comuns como especificidade, erros de sintaxe, cache do navegador, ordem dos seletores e conflitos de CSS.", site: "Alura Fórum" },
+  { id: 141, page: "duvidas", title: "Centralizar div vertical e horizontal", url: "https://cursos.alura.com.br/forum/topico-duvida-centralizar-div-vertical-horizontal-266555", type: "forum-content", level: "forum", lang: "pt", desc: "Todas as formas de centralizar uma div: Flexbox, Grid, position + transform, margin auto e text-align. Guia completo para cada situação.", site: "Alura Fórum" }
 ];
 
 // ============================================
-// 3. FUNÇÕES AUXILIARES (NOMES DOS NÍVEIS)
+// 3. FUNÇÕES AUXILIARES
 // ============================================
 function getLevelName(level) {
   const map = { beginner: 'Iniciante', intermediate: 'Intermediário', advanced: 'Avançado', forum: 'Dúvida' };
@@ -788,7 +929,7 @@ function getTypeName(type) {
 }
 
 // ============================================
-// 4. RENDERIZAÇÃO DOS CARDS
+// 4. RENDERIZAÇÃO DOS CARDS (com créditos)
 // ============================================
 function renderCards(containerId, pageName = null, filters = { level: 'all', type: 'all', lang: 'all' }) {
   let filtered = [...recursos];
@@ -832,14 +973,102 @@ function renderCards(containerId, pageName = null, filters = { level: 'all', typ
           <span class="badge badge-type"><i class="fas fa-file-alt"></i> ${getTypeName(r.type)}</span>
           <span class="badge badge-lang"><i class="fas fa-globe"></i> ${r.lang === 'pt' ? '🇧🇷 Português' : '🇺🇸 Inglês'}</span>
           <span class="badge badge-free"><i class="fas fa-gem"></i> Gratuito</span>
+          ${r.title.includes('DevCursosBrasil') || r.credit ? '<span class="badge badge-credit"><i class="fas fa-star"></i> Destaque</span>' : ''}
         </div>
         <div class="card-title"><a href="${r.url}" target="_blank" rel="noopener">${r.title}</a></div>
         <div class="card-meta"><i class="fas fa-building"></i> ${r.site}</div>
         <div class="card-desc">${r.desc}</div>
         <div class="card-footnote"><i class="fas fa-tag"></i> ${getTypeName(r.type)} • ${getLevelName(r.level)}</div>
+        ${r.credit ? `
+        <div class="credit-highlight">
+          <i class="fab fa-github"></i> Mantido por 
+          <a href="${r.credit}" target="_blank">${r.credit.replace('https://github.com/', '')}</a>
+        </div>` : ''}
       </div>
     `).join('');
   }
+}
+
+// ============================================
+// 4.1 FUNÇÃO PARA EMBARALHAR DESTAQUES
+// ============================================
+function shuffleArray(array) {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
+function renderHomeWithRandomHighlights() {
+  const homeRecursos = recursos.filter(r => r.page === "home");
+  const shuffled = shuffleArray(homeRecursos);
+  
+  // Pega 4 recursos aleatórios (ou todos se houver menos de 4)
+  const destaques = shuffled.slice(0, 4);
+  
+  const container = document.getElementById('destaques-grid');
+  if (!container) return;
+  
+  container.innerHTML = destaques.map(r => `
+    <div class="card">
+      <div class="card-badges">
+        <span class="badge badge-level-${r.level}"><i class="fas fa-chart-line"></i> ${getLevelName(r.level)}</span>
+        <span class="badge badge-type"><i class="fas fa-file-alt"></i> ${getTypeName(r.type)}</span>
+        <span class="badge badge-lang"><i class="fas fa-globe"></i> ${r.lang === 'pt' ? '🇧🇷 Português' : '🇺🇸 Inglês'}</span>
+        <span class="badge badge-free"><i class="fas fa-gem"></i> Gratuito</span>
+        ${r.title.includes('DevCursosBrasil') || r.credit ? '<span class="badge badge-credit"><i class="fas fa-star"></i> Destaque</span>' : ''}
+      </div>
+      <div class="card-title"><a href="${r.url}" target="_blank" rel="noopener">${r.title}</a></div>
+      <div class="card-meta"><i class="fas fa-building"></i> ${r.site}</div>
+      <div class="card-desc">${r.desc}</div>
+      <div class="card-footnote">
+        <i class="fas fa-tag"></i> ${getTypeName(r.type)} • ${getLevelName(r.level)}
+        <span style="float: right;"><i class="fas fa-dice"></i> Aleatório</span>
+      </div>
+      ${r.credit ? `
+      <div class="credit-highlight">
+        <i class="fab fa-github"></i> Mantido por 
+        <a href="${r.credit}" target="_blank">${r.credit.replace('https://github.com/', '')}</a>
+      </div>` : ''}
+    </div>
+  `).join('');
+  
+  // Remove o contador antigo se existir
+  const oldCounter = document.querySelector('#destaques-grid + div');
+  if (oldCounter) oldCounter.remove();
+  
+  // Adiciona contador de recursos
+  const totalHomeRecursos = homeRecursos.length;
+  const counterHTML = `
+    <div style="text-align: center; margin-top: 16px; font-size: 12px; color: var(--text-light);">
+      <i class="fas fa-sync-alt"></i> Mostrando ${destaques.length} de ${totalHomeRecursos} recursos em destaque • 
+      <a href="#" onclick="recarregarDestaques(); return false;" style="color: var(--primary); font-weight: 600;">
+        <i class="fas fa-dice"></i> Sortear novamente
+      </a>
+    </div>
+  `;
+  
+  container.insertAdjacentHTML('afterend', counterHTML);
+}
+
+// Função global para recarregar destaques
+function recarregarDestaques() {
+  // Remove o contador antigo se existir
+  const oldCounter = document.querySelector('#destaques-grid + div');
+  if (oldCounter) oldCounter.remove();
+  
+  // Renderiza novos destaques
+  renderHomeWithRandomHighlights();
+  
+  // Pequena animação de feedback
+  const grid = document.getElementById('destaques-grid');
+  grid.style.opacity = '0';
+  grid.style.transition = 'opacity 0.3s ease';
+  setTimeout(() => {
+    grid.style.opacity = '1';
+  }, 50);
 }
 
 // ============================================
@@ -850,13 +1079,15 @@ let currentFilters = { level: 'all', type: 'all', lang: 'all' };
 
 function applyFiltersToCurrentPage() {
   if (currentPage === 'home') {
-    renderCards('destaques-grid', 'home', currentFilters);
+    renderHomeWithRandomHighlights();
   } else if (currentPage === 'html') {
     renderCards('html-grid', 'html', currentFilters);
   } else if (currentPage === 'css') {
     renderCards('css-grid', 'css', currentFilters);
   } else if (currentPage === 'ferramentas') {
     renderCards('ferramentas-grid', 'ferramentas', currentFilters);
+  } else if (currentPage === 'pratica') {
+    renderCards('pratica-grid', 'pratica', currentFilters);
   } else if (currentPage === 'duvidas') {
     renderCards('duvidas-grid', 'duvidas', currentFilters);
   }
@@ -916,11 +1147,11 @@ function setupNavigation() {
 
 // ============================================
 // 6. INICIALIZAÇÃO
-// ============================================
-renderCards('destaques-grid', 'home', currentFilters);
+renderHomeWithRandomHighlights();
 renderCards('html-grid', 'html', currentFilters);
 renderCards('css-grid', 'css', currentFilters);
 renderCards('ferramentas-grid', 'ferramentas', currentFilters);
+renderCards('pratica-grid', 'pratica', currentFilters);
 renderCards('duvidas-grid', 'duvidas', currentFilters);
 setupFilters();
 setupNavigation();
